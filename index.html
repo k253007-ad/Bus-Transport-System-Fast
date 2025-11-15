@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Transport System - Find Your Bus</title>
+    <link rel="stylesheet" href="projectStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-bus"></i>
+                <span>BusTrack</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="main-title">
+                    <i class="fas fa-route"></i>
+                    Bus Transport System
+                </h1>
+                <p class="subtitle">
+                    <i class="fas fa-bullseye"></i>
+                    Our Goal is to Make Transport Easy & Accessible
+                </p>
+            </div>
+        </div>
+
+        <!-- Search Container -->
+        <div class="search-container">
+            <div class="container">
+                <div class="search-header">
+                    <h2>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Find Your Bus Stop
+                    </h2>
+                    <p class="search-subtitle">Search for bus stops near you</p>
+                </div>
+
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Type to search bus stops..." onkeyup="filterList()">
+                    <span class="clear-btn" onclick="clearSearch()" style="display: none;">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+
+                <div class="stops-count">
+                    <span id="stopsCount">9 stops available</span>
+                </div>
+
+                <ul id="stopsList" class="stops-list"></ul>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features-section">
+            <div class="feature-card">
+                <i class="fas fa-clock"></i>
+                <h3>Real-time Updates</h3>
+                <p>Get live bus availability</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>All Routes</h3>
+                <p>Complete route information</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile Friendly</h3>
+                <p>Access anywhere, anytime</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 BusTrack System | Making Transport Simple</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

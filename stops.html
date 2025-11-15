@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Details - BusTrack</title>
+    <link rel="stylesheet" href="stopsStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-bus"></i>
+                <span>BusTrack</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#" class="active">Stop Details</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <!-- Back Button -->
+        <button class="back-btn" onclick="history.back()">
+            <i class="fas fa-arrow-left"></i>
+            Back to Search
+        </button>
+
+        <!-- Stop Information Card -->
+        <div class="container stop-card">
+            <div class="stop-header">
+                <div class="stop-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="stop-info">
+                    <p class="stop-label">Selected Stop</p>
+                    <div class="stop-name" id="stopName">
+                        <i class="fas fa-spinner fa-spin"></i> Loading...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Available Buses Section -->
+        <div class="container buses-container">
+            <div class="buses-header">
+                <h2>
+                    <i class="fas fa-bus-alt"></i>
+                    Available Buses
+                </h2>
+                <p class="buses-subtitle">Click on a bus to see detailed route information</p>
+            </div>
+
+            <ul id="busesList" class="buses-list">
+                <li class="loading-item">
+                    <i class="fas fa-spinner fa-spin"></i> Loading buses...
+                </li>
+            </ul>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="stats-container">
+            <div class="stat-card">
+                <i class="fas fa-route"></i>
+                <div class="stat-content">
+                    <h3 id="totalBuses">-</h3>
+                    <p>Total Buses</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-chair"></i>
+                <div class="stat-content">
+                    <h3 id="avgCapacity">-</h3>
+                    <p>Avg Capacity</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-clock"></i>
+                <div class="stat-content">
+                    <h3>5-10</h3>
+                    <p>Min Wait</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 BusTrack System | Making Transport Simple</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

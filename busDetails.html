@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Details - BusTrack</title>
+    <link rel="stylesheet" href="busDetailsStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-bus"></i>
+                <span>BusTrack</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#" onclick="history.back(); return false;">Stop Details</a>
+                <a href="#" class="active">Bus Details</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <!-- Back Button -->
+        <button class="back-btn" onclick="history.back()">
+            <i class="fas fa-arrow-left"></i>
+            Back to Stop
+        </button>
+
+        <!-- Bus Header Card -->
+        <div class="container bus-header-card">
+            <div class="bus-header-content">
+                <div class="bus-icon-large">
+                    <i class="fas fa-bus"></i>
+                </div>
+                <div class="bus-header-info">
+                    <p class="bus-label">Bus Route</p>
+                    <h1 class="bus-name" id="busName">
+                        <i class="fas fa-spinner fa-spin"></i> Loading...
+                    </h1>
+                    <div class="bus-status">
+                        <span class="status-badge" id="statusBadge">
+                            <i class="fas fa-circle"></i> Active
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bus Stats -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-route"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 id="totalStops">-</h3>
+                    <p>Total Stops</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 id="filledSeats">-</h3>
+                    <p>Seats Filled</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-chair"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 id="availableSeats">-</h3>
+                    <p>Available Seats</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-percentage"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 id="capacityPercent">-</h3>
+                    <p>Capacity</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Capacity Bar -->
+        <div class="container capacity-container">
+            <h3>
+                <i class="fas fa-chart-line"></i>
+                Current Capacity
+            </h3>
+            <div class="capacity-bar-large">
+                <div class="capacity-fill" id="capacityFill" style="width: 0%">
+                    <span class="capacity-text" id="capacityText">0%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Route Map -->
+        <div class="container route-container">
+            <div class="route-header">
+                <h2>
+                    <i class="fas fa-map-marked-alt"></i>
+                    Route Map
+                </h2>
+                <p class="route-subtitle">All stops on this route</p>
+            </div>
+
+            <div class="route-map" id="routeMap">
+                <div class="loading-route">
+                    <i class="fas fa-spinner fa-spin"></i> Loading route...
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="info-content">
+                    <h4>Operating Hours</h4>
+                    <p>6:00 AM - 11:00 PM</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-stopwatch"></i>
+                </div>
+                <div class="info-content">
+                    <h4>Frequency</h4>
+                    <p>Every 10-15 minutes</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <div class="info-content">
+                    <h4>Fare</h4>
+                    <p>Rs. 30 - Rs. 50</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 BusTrack System | Making Transport Simple</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
