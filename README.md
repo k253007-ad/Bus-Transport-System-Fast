@@ -37,52 +37,6 @@ A modern, professional web-based bus tracking system designed to make public tra
 - Real-time search filtering
 - Dynamic capacity calculations
 
-## 🚀 Quick Start
-
-### Option 1: GitHub Pages Deployment (Recommended)
-
-1. **Create a GitHub Repository**
-   ```bash
-   # Create a new repository on GitHub
-   # Upload all files to the repository
-   ```
-
-2. **Enable GitHub Pages**
-   - Go to your repository Settings
-   - Navigate to "Pages" section
-   - Under "Source", select your main branch
-   - Click "Save"
-   - Your site will be live at: `https://yourusername.github.io/repository-name/`
-
-3. **Access Your Site**
-   - Wait 1-2 minutes for deployment
-   - Visit your GitHub Pages URL
-   - Your Bus Transport System is now live! 🎉
-
-### Option 2: Local Development
-
-1. **Clone or Download**
-   ```bash
-   git clone https://github.com/yourusername/bus-transport-system.git
-   cd bus-transport-system
-   ```
-
-2. **Run Locally**
-   - Simply open `index.html` in your browser
-   - Or use a local server:
-     ```bash
-     # Python 3
-     python -m http.server 8000
-     
-     # Python 2
-     python -m SimpleHTTPServer 8000
-     
-     # Node.js (with http-server package)
-     npx http-server
-     ```
-
-3. **View in Browser**
-   - Navigate to `http://localhost:8000`
 
 ## 📁 Project Structure
 
@@ -117,70 +71,6 @@ bus-transport-system/
    - View capacity statistics
    - Identify your current stop (marked with ⭐)
 
-### For Developers
-
-#### Adding New Bus Stops
-Edit `script.js`:
-```javascript
-let stops = [
-    "Your New Stop",
-    "Another Stop",
-    // ... add more stops
-];
-```
-
-#### Adding New Buses
-Edit `script.js`:
-```javascript
-const buses = [
-    {
-        id: 5,  // Unique ID
-        name: "Express-1",
-        stops: ["Stop A", "Stop B", "Stop C"],
-        filledSeats: 30,
-        totalSeats: 50
-    },
-    // ... add more buses
-];
-```
-
-#### Customizing Colors
-Edit the CSS files and modify the `:root` variables:
-```css
-:root {
-    --primary-color: #2563eb;  /* Change to your brand color */
-    --secondary-color: #10b981;
-    --accent-color: #f59e0b;
-    /* ... more color variables */
-}
-```
-
-## 🎨 Customization Guide
-
-### Changing the Theme
-All color variables are defined in the `:root` section of each CSS file. Modify these to match your brand:
-
-```css
-:root {
-    --primary-color: #your-color;
-    --primary-dark: #your-dark-color;
-    --primary-light: #your-light-color;
-}
-```
-
-### Adding New Features
-The code is modular and easy to extend:
-- **New pages**: Follow the same structure as existing pages
-- **New data fields**: Add to the `buses` array in `script.js`
-- **New animations**: Add CSS animations in the respective style files
-
-## 🛠️ Technologies Used
-
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with Flexbox and Grid
-- **JavaScript (ES6+)** - Dynamic functionality
-- **Font Awesome 6** - Icons
-- **Google Fonts (Poppins)** - Typography
 
 ## 📱 Browser Support
 
@@ -189,55 +79,15 @@ The code is modular and easy to extend:
 - ✅ Safari (latest)
 - ✅ Edge (latest)
 - ✅ Mobile browsers (iOS Safari, Chrome Mobile)
-
-## 🔧 Configuration
-
-### GitHub Pages Specific Settings
-
-The project is already configured for GitHub Pages. The JavaScript uses relative paths that work with GitHub Pages' subdirectory structure:
-
-```javascript
-// Automatically handles GitHub Pages paths
-function getCurrentPage() {
-    const path = window.location.pathname;
-    const page = path.substring(path.lastIndexOf('/') + 1);
-    return page || 'index.html';
-}
-```
-
-No additional configuration needed!
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**Issue**: Pages don't load on GitHub Pages
-- **Solution**: Ensure all file names match exactly (case-sensitive)
-- Check that GitHub Pages is enabled in repository settings
-
-**Issue**: Styles not appearing
-- **Solution**: Clear browser cache (Ctrl+Shift+R or Cmd+Shift+R)
-- Verify CSS files are in the same directory as HTML files
-
-**Issue**: Navigation between pages not working
-- **Solution**: Ensure all HTML files are in the root directory
-- Check browser console for JavaScript errors
+- I have tested all of it.
 
 ## 🚀 Future Enhancements
 
-Potential features to add:
-- [ ] Real-time GPS tracking
-- [ ] Push notifications for bus arrivals
-- [ ] User accounts and favorites
-- [ ] Real-time updates via API
-- [ ] Multi-language support
-- [ ] Offline mode with service workers
-- [ ] Integration with payment systems
-- [ ] Admin panel for managing routes
+-Noting in particullar just adding Form to Register
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+My code is copyable but I still hold the rights
 
 ## 👥 Contributing
 
@@ -250,16 +100,12 @@ Contributions are welcome! Feel free to:
 ## 📞 Support
 
 If you have any questions or issues:
-- Open an issue on GitHub
-- Contact the development team
-- Check the documentation
+- Don't ask Zeeshan or Shehrayar Please
+- Just ask me
 
+  
 ## 🌟 Credits
 
-Developed with ❤️ to make public transportation easier and more accessible for everyone.
-
----
-
-**Made with** ❤️ **by the BusTrack Team**
-
-🚌 Making Transport Simple, One Stop at a Time!
+Main Developer Adnan.
+CSS Designer Zeeshan.
+DataBase Manager Shehrayar
