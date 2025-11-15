@@ -101,11 +101,11 @@ Contributions are welcome! Feel free to:
 
 If you have any questions or issues:
 - Don't ask Zeeshan or Shehrayar Please
-- Just ask me
+- Just ask me (Adnan)
 
   
 ## 🌟 Credits
 
-Main Developer Adnan.
-CSS Designer Zeeshan.
-DataBase Manager Shehrayar
+-Main Developer Adnan.
+-CSS Designer Zeeshan.
+-DataBase Manager Shehrayar
