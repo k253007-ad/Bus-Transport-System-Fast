@@ -106,6 +106,6 @@ If you have any questions or issues:
   
 ## 🌟 Credits
 
--Main Developer Adnan.
--CSS Designer Zeeshan.
--DataBase Manager Shehrayar
+- Main Developer Adnan.
+- CSS Designer Zeeshan.
+- DataBase Manager Shehrayar
