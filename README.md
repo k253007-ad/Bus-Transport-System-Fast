@@ -100,12 +100,10 @@ Contributions are welcome! Feel free to:
 ## 📞 Support
 
 If you have any questions or issues:
-- Don't ask Zeeshan or Shehrayar Please
-- Just ask me (Adnan)
+- Ask me via Email
+- adnanahmed06@gmail.com
 
   
 ## 🌟 Credits
 
-- Main Developer Adnan.
-- CSS Designer Zeeshan.
-- DataBase Manager Shehrayar
+**Main Developer Adnan**
